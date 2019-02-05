@@ -8,7 +8,10 @@ const config: Configuration = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js"]
+    extensions: [".ts", ".tsx", ".js"],
+    alias: {
+      "~common": "../~common"
+    }
   },
   module: {
     rules: [

@@ -3,9 +3,13 @@
     "strict": true,
     "target": "es6",
     "module": "commonjs",
-    "noImplicitAny": true
-  },
-  "include": [
-    "../~common"
-  ]
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "paths": {
+      "~common": [
+        "../~common"
+      ]
+    }
+  }
+
 }
